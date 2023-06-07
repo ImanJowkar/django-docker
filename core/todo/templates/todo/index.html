@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Home page
+
+{% endblock title %}
+
+
+{% block content %}
+
+{% include 'inc/navbar.html' %}
+
+
+
+<br>
+<br>
+
+<div class="text-center">
+
+<h2> Simply.... The best website out there! </h2>
+
+  <br>
+    
+
+  <a class="btn btn-outline-primary" type="button"  href="{% url 'register' %}">Register</a>
+
+
+</div>
+
+
+
+{% endblock content %}

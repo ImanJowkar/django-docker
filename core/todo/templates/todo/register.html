@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    register page
+
+{% endblock title %}
+
+
+{% block content %}
+
+    <form class='' method='post' autocomplete="off" novalidate>
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type='submit' value='Register' >
+
+    </form>
+
+{% endblock content %}
